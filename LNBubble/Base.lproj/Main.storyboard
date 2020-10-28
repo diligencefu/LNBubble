@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kzS-5R-Fh7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LNBubble" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j81-3s-jVX">
+                                <rect key="frame" x="78.5" y="138" width="257" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="DLW-GX-9E8"/>
+                                    <constraint firstAttribute="height" constant="40" id="Y2X-Nu-h9S"/>
+                                </constraints>
+                                <state key="normal" title="自定义sheet"/>
+                                <connections>
+                                    <action selector="sheetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rad-77-7fv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFB-k9-2vl">
+                                <rect key="frame" x="78.5" y="190" width="257" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2rh-yv-1He"/>
+                                    <constraint firstAttribute="width" constant="257" id="hqV-Xm-mjN"/>
+                                </constraints>
+                                <state key="normal" title="气泡"/>
+                                <connections>
+                                    <action selector="showBubble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RVh-2X-Dvi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSP-Au-lPt">
+                                <rect key="frame" x="5" y="190" width="15" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="M9E-FW-xQs"/>
+                                    <constraint firstAttribute="width" constant="15" id="vhJ-Q6-QUY"/>
+                                </constraints>
+                                <state key="normal" title="气泡"/>
+                                <connections>
+                                    <action selector="showBubble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ao4-y6-Ip7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBb-69-56T">
+                                <rect key="frame" x="394" y="190" width="15" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="CiF-cH-xRN"/>
+                                    <constraint firstAttribute="height" constant="40" id="Edh-4I-Pe7"/>
+                                </constraints>
+                                <state key="normal" title="气泡"/>
+                                <connections>
+                                    <action selector="showBubble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rGq-RK-g2L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzQ-GM-YBI">
+                                <rect key="frame" x="25" y="190" width="48.5" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4Fh-Si-ZB1"/>
+                                </constraints>
+                                <state key="normal" title="气泡"/>
+                                <connections>
+                                    <action selector="showBubble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V9W-Ye-1Bz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5h7-m6-A03">
+                                <rect key="frame" x="340.5" y="190" width="48.5" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JTJ-F2-2Nr"/>
+                                </constraints>
+                                <state key="normal" title="气泡"/>
+                                <connections>
+                                    <action selector="showBubble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjY-cS-zbr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3M-Sr-CLk">
+                                <rect key="frame" x="78.5" y="742" width="257" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Frd-Bg-QyS"/>
+                                    <constraint firstAttribute="width" constant="257" id="rQj-x5-jab"/>
+                                </constraints>
+                                <state key="normal" title="气泡"/>
+                                <connections>
+                                    <action selector="showBubble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6NJ-Vs-tSK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebH-y9-nfS">
+                                <rect key="frame" x="8" y="742" width="15" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ult-hG-jKV"/>
+                                    <constraint firstAttribute="width" constant="15" id="ggU-Sl-hHf"/>
+                                </constraints>
+                                <state key="normal" title="气泡"/>
+                                <connections>
+                                    <action selector="showBubble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E8j-SM-lrk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7RQ-Ni-bUo">
+                                <rect key="frame" x="391" y="742" width="15" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bhk-Y2-YAS"/>
+                                    <constraint firstAttribute="width" constant="15" id="yGW-JY-eSb"/>
+                                </constraints>
+                                <state key="normal" title="气泡"/>
+                                <connections>
+                                    <action selector="showBubble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aqx-5x-eru"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDn-Ok-uvE">
+                                <rect key="frame" x="28" y="742" width="45.5" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mMK-Qb-7V4"/>
+                                </constraints>
+                                <state key="normal" title="气泡"/>
+                                <connections>
+                                    <action selector="showBubble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mjc-Is-jye"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krj-48-VmO">
+                                <rect key="frame" x="340.5" y="742" width="45.5" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ReZ-g2-Gau"/>
+                                </constraints>
+                                <state key="normal" title="气泡"/>
+                                <connections>
+                                    <action selector="showBubble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nO4-WC-Iyi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAO-G9-HK7">
+                                <rect key="frame" x="78.5" y="455" width="257" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BBN-N0-y1i"/>
+                                    <constraint firstAttribute="width" constant="257" id="xxa-gv-eO6"/>
+                                </constraints>
+                                <state key="normal" title="自定义sheet"/>
+                                <connections>
+                                    <action selector="sheetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KuC-f9-Dm2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="5h7-m6-A03" firstAttribute="centerY" secondItem="ZFB-k9-2vl" secondAttribute="centerY" id="27c-mO-NNf"/>
+                            <constraint firstItem="7RQ-Ni-bUo" firstAttribute="leading" secondItem="krj-48-VmO" secondAttribute="trailing" constant="5" id="4Ng-bL-Kry"/>
+                            <constraint firstItem="ZBb-69-56T" firstAttribute="centerY" secondItem="ZFB-k9-2vl" secondAttribute="centerY" id="6ro-9l-HGA"/>
+                            <constraint firstItem="7RQ-Ni-bUo" firstAttribute="centerY" secondItem="F3M-Sr-CLk" secondAttribute="centerY" id="7hn-pj-H9H"/>
+                            <constraint firstItem="zAO-G9-HK7" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="88u-bb-A7K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZBb-69-56T" secondAttribute="trailing" constant="5" id="8X3-YJ-Yak"/>
+                            <constraint firstItem="MDn-Ok-uvE" firstAttribute="centerY" secondItem="F3M-Sr-CLk" secondAttribute="centerY" id="9uE-OY-f4T"/>
+                            <constraint firstItem="F3M-Sr-CLk" firstAttribute="leading" secondItem="MDn-Ok-uvE" secondAttribute="trailing" constant="5" id="ANi-QY-wML"/>
+                            <constraint firstItem="ZFB-k9-2vl" firstAttribute="leading" secondItem="uzQ-GM-YBI" secondAttribute="trailing" constant="5" id="DsA-xB-KUx"/>
+                            <constraint firstItem="ZFB-k9-2vl" firstAttribute="centerX" secondItem="j81-3s-jVX" secondAttribute="centerX" id="Dx2-uY-Zxo"/>
+                            <constraint firstItem="uzQ-GM-YBI" firstAttribute="centerY" secondItem="ZFB-k9-2vl" secondAttribute="centerY" id="GVp-Lz-6Lc"/>
+                            <constraint firstItem="ebH-y9-nfS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Lve-nj-gMf"/>
+                            <constraint firstItem="5h7-m6-A03" firstAttribute="leading" secondItem="ZFB-k9-2vl" secondAttribute="trailing" constant="5" id="Lyq-1s-biX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7RQ-Ni-bUo" secondAttribute="trailing" constant="8" id="MMc-3I-2WI"/>
+                            <constraint firstItem="j81-3s-jVX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="PrG-Xt-2vh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="F3M-Sr-CLk" secondAttribute="bottom" constant="80" id="QjZ-ib-qPK"/>
+                            <constraint firstItem="uzQ-GM-YBI" firstAttribute="leading" secondItem="uSP-Au-lPt" secondAttribute="trailing" constant="5" id="Y6u-Xj-5xM"/>
+                            <constraint firstItem="ebH-y9-nfS" firstAttribute="centerY" secondItem="F3M-Sr-CLk" secondAttribute="centerY" id="Ylv-Lg-irR"/>
+                            <constraint firstItem="MDn-Ok-uvE" firstAttribute="leading" secondItem="ebH-y9-nfS" secondAttribute="trailing" constant="5" id="gOq-xs-gdr"/>
+                            <constraint firstItem="zAO-G9-HK7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jQQ-gy-4zx"/>
+                            <constraint firstItem="uSP-Au-lPt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="jYe-33-GCs"/>
+                            <constraint firstItem="krj-48-VmO" firstAttribute="centerY" secondItem="F3M-Sr-CLk" secondAttribute="centerY" id="ksS-CJ-4pX"/>
+                            <constraint firstItem="ZBb-69-56T" firstAttribute="leading" secondItem="5h7-m6-A03" secondAttribute="trailing" constant="5" id="q3U-yv-hY8"/>
+                            <constraint firstItem="j81-3s-jVX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rGg-sO-mcc"/>
+                            <constraint firstItem="F3M-Sr-CLk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="u59-Bk-5Dy"/>
+                            <constraint firstItem="krj-48-VmO" firstAttribute="leading" secondItem="F3M-Sr-CLk" secondAttribute="trailing" constant="5" id="wT7-HX-wco"/>
+                            <constraint firstItem="ZFB-k9-2vl" firstAttribute="top" secondItem="j81-3s-jVX" secondAttribute="bottom" constant="12" id="wgq-tq-ah2"/>
+                            <constraint firstItem="uSP-Au-lPt" firstAttribute="centerY" secondItem="ZFB-k9-2vl" secondAttribute="centerY" id="x4A-ue-oZv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hct-Fn-bGm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="asY-po-quC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kzS-5R-Fh7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="374-zG-fQB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IlF-gN-q4Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SWA-Ja-ulw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

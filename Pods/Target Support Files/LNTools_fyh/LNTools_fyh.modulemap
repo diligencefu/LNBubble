@@ -1,0 +1,6 @@
+framework module LNTools_fyh {
+  umbrella header "LNTools_fyh-umbrella.h"
+
+  export *
+  module * { export * }
+}

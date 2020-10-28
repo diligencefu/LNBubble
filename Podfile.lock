@@ -1,0 +1,20 @@
+PODS:
+  - LNTools_fyh/LNViewExtension (1.0.2):
+    - Toast
+  - Toast (4.0.0)
+
+DEPENDENCIES:
+  - LNTools_fyh/LNViewExtension
+
+SPEC REPOS:
+  trunk:
+    - LNTools_fyh
+    - Toast
+
+SPEC CHECKSUMS:
+  LNTools_fyh: f38331d3159df726283de37857a8abdcd608a538
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+
+PODFILE CHECKSUM: f92701e0cfffe01640c3769771bbb7eebcece857
+
+COCOAPODS: 1.9.3
